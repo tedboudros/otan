@@ -14,6 +14,11 @@
                     "type": "div",
                     "id": "header",
                     "class": ["navbar", "bg-dark", "text-center"],
+                    "style": {
+                        "display": "flex",
+                        "justify-content": "center",
+                        "color": "#fff"
+                    },
                     "children": [{
                         "type": "a",
                         "href": "#",

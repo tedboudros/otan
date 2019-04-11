@@ -80,6 +80,17 @@ function returnElement(element, cb){
             }
         })
     }
+    if(element["style"] !== undefined){
+        beggining = beggining + ' style="'
+        var i = 0;
+        for (var style in element["style"]){
+            i++
+            beggining = beggining + style + ': ' + element["style"][style] + "; "
+            if(i === element["style"].length){
+                beggining = beggining.slice(0, -1) + '"'
+            }
+        }
+    }
     beggining = beggining + ">"
     if(element["html"] !== undefined){
         beggining = beggining + element['html']    
