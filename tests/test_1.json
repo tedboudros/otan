@@ -1,7 +1,8 @@
 [
     {
         "type": "head",
-        "css": ["https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"]
+        "css": ["https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css", "test_1.css"],
+        "title": "JSON to HTML"
     },
     {
         "type": "body",
@@ -10,9 +11,15 @@
                 "type": "div",
                 "id": "container",
                 "children": [{
-                    "type": "button",
-                    "class": ["btn", "btn-dark"],
-                    "value": "Hello World"
+                    "type": "div",
+                    "id": "header",
+                    "class": ["navbar", "bg-dark", "text-center"],
+                    "children": [{
+                        "type": "a",
+                        "href": "#",
+                        "class": ["btn", "btn-info"],
+                        "html": "It works!"
+                    }]
                 }]
             }
         ]

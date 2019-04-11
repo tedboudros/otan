@@ -21,6 +21,9 @@ function createHtml(head, body){
 
 function createHead(head, cb){
     var text = "";
+    if(head["title"] !== undefined){
+        text = text + '<title>' + head["title"] + '</title>'
+    }
     head["css"].forEach(href =>{
         text = text + '<link href="'+href+'" rel="stylesheet" type="text/css">'
     })
@@ -57,8 +60,8 @@ function returnElement(element, cb){
         beggining = '<input type="submit" value="'+element["value"]+'"'
         end = ""
     }else if(element["type"] == "a"){
-        beggining = "<body"
-        end = "</body>"
+        beggining = "<a href='" + element['href'] + "'"
+        end = "</a>"
     }else if(element["type"] == "body"){
         beggining = "<body"
         end = "</body>"
@@ -78,5 +81,8 @@ function returnElement(element, cb){
         })
     }
     beggining = beggining + ">"
+    if(element["html"] !== undefined){
+        beggining = beggining + element['html']    
+    }
     cb(beggining, end)
 }
