@@ -54,17 +54,29 @@ function createElement(element, cb){
 function returnElement(element, cb){
     var beggining = "", end = ""
     if(element["type"] == "button"){
-        beggining = '<input type="submit" value="'+element["value"]+'">'
+        beggining = '<input type="submit" value="'+element["value"]+'"'
         end = ""
     }else if(element["type"] == "a"){
-        beggining = "<body>"
+        beggining = "<body"
         end = "</body>"
     }else if(element["type"] == "body"){
-        beggining = "<body>"
+        beggining = "<body"
         end = "</body>"
     }else if(element["type"] == "div"){
-        beggining = '<div id="'+element["id"]+'">'
+        beggining = '<div id="'+element["id"]+'"'
         end = "</div>"
     }       
+    if(element["class"] !== undefined){
+        beggining = beggining + ' class="'
+        var i = 0;
+        element['class'].forEach(cls => {
+            i++;
+            beggining = beggining + cls + " "
+            if(i === element['class'].length){
+                beggining = beggining.slice(0, -1) + '"'
+            }
+        })
+    }
+    beggining = beggining + ">"
     cb(beggining, end)
 }

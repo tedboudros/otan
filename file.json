@@ -11,6 +11,7 @@
                 "id": "container",
                 "children": [{
                     "type": "button",
+                    "class": ["btn", "btn-dark"],
                     "value": "Hello World"
                 }]
             }
