@@ -1,0 +1,19 @@
+[
+    {
+        "type": "head",
+        "css": ["https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"]
+    },
+    {
+        "type": "body",
+        "children": [
+            {
+                "type": "div",
+                "id": "container",
+                "children": [{
+                    "type": "button",
+                    "value": "Hello World"
+                }]
+            }
+        ]
+    }
+]
