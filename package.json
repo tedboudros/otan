@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thboud/json-to-html.git"
+    "url": "git+https://github.com/thboud/otan.git"
   },
   "keywords": [
     "json",
@@ -21,7 +21,7 @@
   "author": "Theodore Boudros",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/thboud/json-to-html/issues"
+    "url": "https://github.com/thboud/otan/issues"
   },
-  "homepage": "https://github.com/thboud/json-to-html#readme"
+  "homepage": "https://github.com/thboud/otan#readme"
 }
