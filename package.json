@@ -1,6 +1,6 @@
 {
-  "name": "json-to-html",
-  "version": "1.0.0",
+  "name": "@thboud/json-to-html",
+  "version": "0.0.1",
   "description": "Module to convert JSON to HTML",
   "main": "index.js",
   "directories": {
