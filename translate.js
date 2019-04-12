@@ -1,5 +1,5 @@
 const fs = require('fs');
-const element = require('./src/element_old');
+const element = require('./src/body');
 
 var args = process.argv.splice(process.execArgv.length + 2);
 fs.readFile(args[0], function(err, file){
