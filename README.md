@@ -31,6 +31,27 @@ After that,
 
 Navigate to the **"tests"** folder and open the **"test_1.html"** to confirm the code's working!
 
+### Example
+
+```
+const otan = require("otan");
+
+const json = [{
+    "title": "Hello world!"
+    },
+    {
+    "type": "body",
+    "children": [{
+        "type": "a",
+        "html": "Hello world!"
+    }]
+}]
+
+otan(json, (html)=>{
+    console.log(html)
+})
+```
+
 ## Versioning
 
 * Git
