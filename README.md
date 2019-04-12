@@ -1,6 +1,6 @@
 # json-to-html
 
-A NodeJS script to enable you to use JSON files for website building.
+A NodeJS module to enable you to use JSON files for website building.
 
 ## Getting Started
 
@@ -10,12 +10,20 @@ These instructions will get you a copy of the project up and running on your loc
 
 * NodeJS
 
+## Installing
+
+Install the module from npm
+
+```
+npm install json-to-html
+```
+
 ## Testing
 
 Run the following command from the project dir to get the generated html file
 
 ```
-node translate tests/test_1.json
+npm run test
 ```
 
 
