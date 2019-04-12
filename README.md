@@ -33,7 +33,7 @@ Navigate to the **"tests"** folder and open the **"test_1.html"** to confirm the
 
 ### Example
 
-```
+```javascript
 const otan = require("otan");
 
 const json = [{
