@@ -1,4 +1,4 @@
-# json-to-html
+# Otan
 
 A NodeJS module to enable you to use JSON files for website building.
 
@@ -15,7 +15,7 @@ These instructions will get you a copy of the project up and running on your loc
 Install the module from npm
 
 ```
-npm install json-to-html
+npm install otan
 ```
 
 ## Testing

@@ -1,5 +1,5 @@
 {
-  "name": "@thboud/json-to-html",
+  "name": "otan",
   "version": "0.0.1",
   "description": "Module to convert JSON to HTML",
   "main": "index.js",
