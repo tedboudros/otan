@@ -1,0 +1,27 @@
+{
+  "name": "json-to-html",
+  "version": "1.0.0",
+  "description": "Module to convert JSON to HTML",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node tests/test_1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thboud/json-to-html.git"
+  },
+  "keywords": [
+    "json",
+    "html",
+    "convert"
+  ],
+  "author": "Theodore Boudros",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thboud/json-to-html/issues"
+  },
+  "homepage": "https://github.com/thboud/json-to-html#readme"
+}
