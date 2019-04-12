@@ -4,7 +4,6 @@ var args = process.argv.splice(process.execArgv.length + 2);
 fs.readFile(args[0], function(err, file){
     if (err) throw err;
     var newfile = JSON.parse(file.toString());
-    console.log(newfile)
     createHtml(newfile[0], newfile[1])
 })
 
@@ -14,7 +13,6 @@ function createHtml(head, body){
         createElement(body, function(str){
             html = html + str
         });
-        console.log(args[0].split('.')[0] + ".html");
         fs.writeFile(args[0].split('.')[0] + ".html", html, function(err){if (err) throw err;});
     })
 }
@@ -82,11 +80,12 @@ function returnElement(element, cb){
     }
     if(element["style"] !== undefined){
         beggining = beggining + ' style="'
+        var length_keys = Object.keys(element["style"]).length
         var i = 0;
         for (var style in element["style"]){
             i++
             beggining = beggining + style + ': ' + element["style"][style] + "; "
-            if(i === element["style"].length){
+            if(i == length_keys){
                 beggining = beggining.slice(0, -1) + '"'
             }
         }
