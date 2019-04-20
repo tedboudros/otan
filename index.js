@@ -13,7 +13,7 @@ module.exports.head = (head, cb)=>{
     html.head(head,cb)
 }
 
-module.exports = (file, cb)=>{
+module.exports.file = (file, cb)=>{
     file.json(file,function(data){
         html(data, cb)
     })
