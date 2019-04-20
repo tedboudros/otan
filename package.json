@@ -1,6 +1,6 @@
 {
   "name": "otan",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Module to convert JSON to HTML",
   "main": "index.js",
   "directories": {
