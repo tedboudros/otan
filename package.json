@@ -23,5 +23,6 @@
   "bugs": {
     "url": "https://github.com/thboud/otan/issues"
   },
-  "homepage": "https://github.com/thboud/otan#readme"
+  "homepage": "https://github.com/thboud/otan#readme",
+  "dependencies": {}
 }
